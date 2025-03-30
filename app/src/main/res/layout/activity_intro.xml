@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="@color/black"
+    android:id="@+id/main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt vé xem phim"
+                android:textAlignment="center"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="50dp"/>
+
+            <ImageView
+                android:id="@+id/introImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/introimage"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/textIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khám phá và đặt vé những bộ phim \n mới nhất tại các rạp chiếu yêu thích của bạn. \nTrải nghiệm dễ dàng, tiện lợi \n không bao giờ bỏ lỡ những bộ phim hot!"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:alpha="0.8"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@android:style/Widget.Button"
+                android:id="@+id/btnStart"
+                android:background="@drawable/orange_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:text="Khám phá ngay" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
